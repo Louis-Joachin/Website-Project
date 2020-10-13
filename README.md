@@ -1,2 +1,2 @@
 # projet
-Heaven Holidays, no need to pray
+Heaven Holidays, paradise is one trip away
