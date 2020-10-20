@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Heaven Holidays - Réservation</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/fichier.js"></script>
+</head>
+<header>
+    <div class="topnav">
+        <a class="active" href="accueil.html">Accueil</a>
+        <div class="dropdown">
+            <button class="dropbtn">Nos Offres
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Toutes les destinations</a>
+              <a href="#">Promotions</a>
+              <a href="#">Famille</a>
+              <a href="#">Couple</a>
+              <a href="#">Aventure</a>
+            </div>
+          </div>
+        <a href="contact.html">Contact</a>
+        <div class="login-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Identifiant" name="Identifiant" id="Identifiant">
+                <input type="password" placeholder="Mot de passe" name="mdp" id="MDP">
+                <button type="submit">Se Connecter</button>
+             </form>
+        </div>
+    </div>
+</header>
+
+<body>
+    <h1 class="texte">Formulaire de Réservation</h1>
+    <form action="/action_page.php">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+        <label for="mail">Adresse Mail :</label>
+        <input type="email" id="mail" name="mail"required><br><br>
+        <label for="phone">Téléphone :</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+        <label for="depart">Date de départ :</label>
+        <input type="date" id="depart" name="depart" required><br><br>
+        <label for="retour">Date de retour :</label>
+        <input type="date" id="retour" name="retour" required><br><br>
+        <label for="adultes">Nombre d'Adultes :</label>
+        <input type="number" id="adultes" name="adultes" min="1" required><br><br>
+        <label for="enfant">Nombre d'Enfants :</label>
+        <input type="number" id="enfant" name="enfant" required><br><br>
+        <label for="petitdej">Petit Déjeuner ?</label>
+        <input type="checkbox" id="petitdej" name="petitdej" value="1" required><br><br>
+        <textarea name="message" rows="10" cols="50" placeholder="Demande de renseignement" >
+        </textarea>
+        <input type="submit" value="Submit">
+      </form>
+
+</body>
+
